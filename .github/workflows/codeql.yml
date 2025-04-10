@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd979439af79c43f90693cd35ec3e3eb0342a609b2f48c7ba6a5687dc6ee3fb9
-size 4813
+name: "CodeQL Analysis"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  analyze:
+    name: "Run CodeQL Analysis"
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v3
+
+      - name: "Initialize CodeQL"
+        uses: github/codeql-action/init@v2
+        with:
+          # Specify the languages to analyze. Update this value as needed.
+          languages: "javascript"
+          # For multi-language projects, you could use, for example: languages: "javascript,python"
+
+      - name: "Build project"
+        uses: github/codeql-action/autobuild@v2
+
+      - name: "Perform CodeQL Analysis"
+        uses: github/codeql-action/analyze@v2
