@@ -10,11 +10,10 @@ body:
 
       Thank you for reporting a bug! Use the sections below to submit a bug **only** if it's related to samples in this repo. 
       
-      - All bug reports are welcome - we want to fix them!
-      - This repo is maintained by volunteers. Please be courteous and patient. 🙂
+      - All bug reports are welcome, and we want to fix them!
+      - Volunteers maintain this repo. Please be courteous and patient. 🙂
       - Remember to include sufficient details and context.
       - If you have multiple questions, suggestions, or bugs, please submit them in separate issues.
-      - We accept pull requests. If you know how to fix it - go ahead! If you know how to make it - go ahead! If you're unsure how to do a pull request, consider signing up for a free [Sharing is Caring First-Time Contributor](http://aka.ms/sharing-is-caring#pnp-sic-first-time-contributor) session.
 
       Please provide the following details about the issue you encountered.  *Issues that do not provide the information requested in this form will be flagged as **incomplete** & automatically closed.*
 
@@ -38,13 +37,13 @@ body:
     description: |
         Who wrote the sample?
         
-        Because of the way this repository is configured, samples authors do not get a notification when you create an issue. 
+        Because of the way this repository is configured, sample authors do not get a notification when you create an issue. 
         
-        For the section above **@mention any author of the sample**. Authors' GitHub handle can be found on the main sample documentation page, under the "Solution" section. 
+        For the section above, **@mention any author of the sample**. The authors' GitHub handle can be found on the main sample documentation page, under the "Solution" section. 
         
-        Issues without an @mention will be closed automatically, as authors won't get notified.
+        Issues without an @mention will be closed automatically, as the authors won't get notified.
         
-        **NOTE:** Don't @mention the repo maintainers, they already get notified.
+        **NOTE:** Don't @mention the repo maintainers; they already get notified.
 
 - type: markdown
   attributes:
