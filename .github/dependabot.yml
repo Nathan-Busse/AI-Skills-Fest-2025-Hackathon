@@ -1,11 +1,19 @@
-# To start with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
+# .github/dependabot.yml
+# This configuration file enables Dependabot to automatically check for dependency updates.
+# For complete configuration options, please refer to:
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
 updates:
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "pip"   # Replace with your package ecosystem (e.g., npm, maven, pip, gradle, docker, etc.)
+    directory: "/"             # Specify the directory containing your package manifests
     schedule:
-      interval: "weekly"
+      interval: "weekly"       # Options include "daily", "weekly", "monthly"
+      # day: "monday"          # (Optional) Specify the day of the week for weekly updates
+    # Optionally, you can add further customizations:
+    # allow:
+    #   - dependency-type: "direct"  # Options: "direct", "indirect"
+    # ignore:
+    #   - dependency-name: "example-package"
+    #     versions:
+    #       - ">=1.0.0"
